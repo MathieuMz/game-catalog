@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom"
+import Catalog from "./catalog/Catalog"
+import Header from "./commons/header/Header"
 
-class Welcome extends React.Component {
+class App extends React.Component {
   render() {
     return (
-      <h2>
-        Hello React world !
-      </h2>
+      <div>
+        <Header />
+        <Catalog />
+      </div>
     );
   }
 }
 
-ReactDOM.render (<Welcome />, document.getElementById('app'));
+ReactDOM.render (<App />, document.getElementById('app'));

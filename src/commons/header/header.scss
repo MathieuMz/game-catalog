@@ -1,0 +1,24 @@
+$bg-color: #333;
+$text-color: #fff;
+$height: 4rem;
+$font: Roboto, sans-serif;
+
+.header {
+  align-items: center;
+  background: $bg-color;
+  display: flex;
+  height: $height;
+
+  h2 {
+    color: $text-color;
+    font-family: $font;
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .logo {
+    margin: 1rem;
+    width: 2rem;
+  }
+}
