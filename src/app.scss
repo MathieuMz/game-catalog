@@ -1,0 +1,9 @@
+.app {
+  background-color: #e5e5e5;
+  font-family: 'Roboto';
+  min-height: calc(100vh - 4rem);
+
+  .header + * {
+    margin-top: 4rem; // Use global variable
+  }
+}

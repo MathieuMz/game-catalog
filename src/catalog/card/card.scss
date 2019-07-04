@@ -1,30 +1,39 @@
 $text-color: #333;
+$card-width: 328px;
 
 .card {
+  background-color: #fff;
   border-radius: .5rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
   margin: 1rem;
-  max-width: 95%;
-  width: 328px;
+  width: $card-width;
+
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
 
   .card-picture {
-    background-color: #eee;
+    background-position: center;
+    background-size: 100%;
     height: 411px;
   }
 
   .card-footer {
     padding: 1rem;
 
-    .cart-title {
+    .card-title {
       color: $text-color;
       font-size: 1.1rem;
+      font-weight: normal;
       margin-bottom: .5rem;
+      margin-top: 0;
     }
 
-    .cart-footer {
+    .card-footnote {
       color: $text-color;
       font-size: .875rem;
       font-weight: 300;
+      margin-bottom: 0;
     }
   }
 }

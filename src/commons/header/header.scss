@@ -1,13 +1,17 @@
 $bg-color: #333;
 $text-color: #fff;
-$height: 4rem;
-$font: Roboto, sans-serif;
+$height: 4rem; // Put in global variable
+$font: sans-serif;
 
 .header {
   align-items: center;
   background: $bg-color;
   display: flex;
   height: $height;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 
   h2 {
     color: $text-color;

@@ -1,0 +1,12 @@
+.filter-item {
+  cursor: pointer;
+  padding: 0 1rem;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.selected {
+    color: red;
+  }
+}
