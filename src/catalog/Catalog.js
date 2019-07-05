@@ -13,6 +13,10 @@ export default class Catalog extends React.Component {
       filter: null
     };
   }
+
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   
   handleFilterChange(newFilter) {
     this.setState({
@@ -28,9 +32,13 @@ export default class Catalog extends React.Component {
           filterValue={this.state.filter}
         />
         <div className="catalog-container">
-          {games.filter(game => this.state.filter ? game.platform === this.state.filter : true).map((game, index) => 
+          {games.map((game, index) => ({
+            ...game,
+            id: index
+          })).filter(game => this.state.filter ? game.platform === this.state.filter : true).map((game) => 
             <Card 
-              key={index}
+              key={game.id}
+              id={game.id}
               name={game.name}
               platform={game.platform}
               cover={game.cover}

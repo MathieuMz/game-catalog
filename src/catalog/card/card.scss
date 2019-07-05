@@ -6,6 +6,7 @@ $card-width: 328px;
   border-radius: .5rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
   margin: 1rem;
+  overflow: hidden;
   width: $card-width;
 
   @media screen and (max-width: 500px) {
