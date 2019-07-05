@@ -1,0 +1,23 @@
+.game-content {
+  height: 100%;
+
+  .text {
+    background-color: white;
+    border: 1px solid #c4c4c4;
+    margin: 5.5rem 8.5rem;
+    padding: 4rem 5rem;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      h4 {
+        margin-top: 0;
+      }
+    }
+
+    .description {
+      text-align: justify;
+    }
+  }
+}
