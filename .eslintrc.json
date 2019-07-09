@@ -9,6 +9,9 @@
     "browser": true,
     "jest": true
   },
+  "globals": {
+    "global": "writable",
+  },
   "settings": {
     "react": {
       "pragma": "React",

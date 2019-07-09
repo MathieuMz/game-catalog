@@ -7,7 +7,7 @@ import './filter.scss';
 export default class Filter extends React.Component {
  static propTypes = {
     platforms: PropTypes.array.isRequired,
-    onChange: PropTypes.func.isRequired,
+    onChange: PropTypes.func,
     filterValue: PropTypes.string
   }
 

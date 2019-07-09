@@ -4,7 +4,7 @@ import './filter-item.scss';
 
 export default class FilterItem extends React.Component {
   static propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
     value: PropTypes.string,
     onChange: PropTypes.func,
     selected: PropTypes.bool

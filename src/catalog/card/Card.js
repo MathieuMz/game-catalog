@@ -6,8 +6,8 @@ import './card.scss';
 
 export default class Card extends React.Component {
   static propTypes = {
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
+    id: PropTypes.number,
+    name: PropTypes.string,
     platform: PropTypes.string,
     cover: PropTypes.string
    }

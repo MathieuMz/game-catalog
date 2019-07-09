@@ -4,9 +4,9 @@ import './game-content.scss';
 
 export default class GameContent extends React.Component {
   static propTypes = {
-    name: PropTypes.string.isRequired,
-    platform: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+    name: PropTypes.string,
+    platform: PropTypes.string,
+    description: PropTypes.string
   };
 
   render() {
