@@ -1,22 +1,28 @@
-import React from "react";
-import FilterItem from './filter-item/FilterItem'
-import {platforms} from '../../assets/platforms.json';
-import "./filter.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import FilterItem from './item/FilterItem';
+
+import './filter.scss';
 
 export default class Filter extends React.Component {
+ static propTypes = {
+    platforms: PropTypes.array.isRequired,
+    onChange: PropTypes.func.isRequired,
+    filterValue: PropTypes.string
+  }
 
   render() {
     return (
       <div className="filter">
         <FilterItem
-          key={platforms.length}
+          key={this.props.platforms.length}
           label='All'
           value={null}
           onChange={this.props.onChange}
           selected={!this.props.filterValue}
         />
-        {platforms.map((platform, index) => 
-          <FilterItem 
+        {this.props.platforms.map((platform, index) =>
+          <FilterItem
             key={index}
             label={platform}
             value={platform}

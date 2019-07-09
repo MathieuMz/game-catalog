@@ -1,9 +1,15 @@
-import React from "react";
-import "./game-content.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './game-content.scss';
 
 export default class GameContent extends React.Component {
-  render() {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    platform: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+  };
 
+  render() {
     return (
       <div className="game-content">
         <div className="text">

@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.not-found {
+  background-image: url('https://static.gamespot.com/uploads/scale_super/917/9176928/2725231-untitled4.jpg');
+  background-size: cover;
+  height: calc(100vh - 4rem);
+  opacity: .8;
+  position: relative;
+
+  .content {
+    color: $white;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+
+    p {
+      font-size: 2rem;
+    }
+
+    a {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
+}

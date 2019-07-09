@@ -1,22 +1,48 @@
+@import '../../variables';
+
 .game-content {
   height: 100%;
 
   .text {
-    background-color: white;
-    border: 1px solid #c4c4c4;
+    background-color: $white;
+    border: 1px solid $gray;
     margin: 5.5rem 8.5rem;
     padding: 4rem 5rem;
+
+    @media screen and (max-width: 700px) {
+      margin: .5rem;
+      padding: 2rem 1rem;
+    }
 
     .title {
       display: flex;
       justify-content: space-between;
 
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+
       h4 {
+        font-size: 1.5rem;
         margin-top: 0;
+
+        @media screen and (max-width: 700px) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      span {
+        font-weight: 200;
+
+        @media screen and (max-width: 700px) {
+          margin-bottom: 1rem;
+        }
       }
     }
 
     .description {
+      color: $true-black;
+      line-height: 25px;
       text-align: justify;
     }
   }

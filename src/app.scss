@@ -1,9 +1,12 @@
+@import './variables';
+
 .app {
-  background-color: #e5e5e5;
+  background-color: $bg-app;
+  color: $black;
   font-family: 'Roboto';
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - #{$header-height});
 
   .header + * {
-    margin-top: 4rem; // Use global variable
+    margin-top: $header-height;
   }
 }

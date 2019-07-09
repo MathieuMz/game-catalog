@@ -1,7 +1,9 @@
+@import '../../variables';
+
 .filter {
-  background-color: #e5e5e5; // Global variable
+  background-color: $bg-app; // Global variable
   display: flex;
   padding: 1rem;
   position: sticky;
-  top: 4rem; // Global variable
+  top: $header-height; // Global variable
 }
